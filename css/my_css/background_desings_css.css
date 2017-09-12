@@ -1,0 +1,16 @@
+.col-md-12{
+    background-color: darkblue;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+
+}
+.heding-h-one{
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+#div_loader{
+    background-color: #B5B5B5;
+}

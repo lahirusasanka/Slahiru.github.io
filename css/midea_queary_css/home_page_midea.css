@@ -1,0 +1,53 @@
+@media screen and (max-width: 400px) {
+    .thumbnail{
+        width:150px;
+        height:100px;
+    }
+    .hOne{
+        text-align: center;
+        font-weight: bold;
+    }
+    .lead{
+        text-align: center;
+        font-style: italic;
+    }
+    .mySlides {
+        display:none;
+        height: 300px;
+        width: 400px;
+    }
+    .h2One{
+        text-align: center;
+        color: black;
+        font-style: italic;
+    }
+    .container-two{
+        background-color: #B5B5B5;
+    }
+
+}
+
+@media screen and (min-width: 401px) and (max-width: 720px) {
+
+
+}
+
+@media screen and (min-width: 721px) and (max-width: 1280px) {
+
+
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+
+
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+
+
+}
+
+@media screen and (min-width: 1921px) {
+
+
+}
