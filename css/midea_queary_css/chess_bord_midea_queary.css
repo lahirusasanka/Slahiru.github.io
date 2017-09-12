@@ -1,0 +1,99 @@
+/*Resalution Chess Borad 768*/
+@media all and (min-width:800px) and (max-width:1020px){
+
+    #div-loader{
+        position: absolute;
+        top: 0;
+        bottom:0;
+        left: 0;
+        right: 0;
+        background-repeat: no-repeat;
+        background-position: center center;
+        z-index: 99999;
+        background-color: white;
+    }
+    #top{
+        height: 0px;
+    }
+    #board{
+        background-color: #aaaaaa;
+        margin-left: 0px;
+        margin-left: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #real_border{
+        background-color: #122b40;
+        margin-left: 0px;
+        margin-left: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .label18{
+        color: white;
+        height: 70px;
+        width: 60px;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: right;
+        vertical-align: middle;
+    }
+    .labelAH{
+        color: white;
+        height: 30px;
+        width: 70px;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: right;
+        vertical-align: middle;
+    }
+    .square{
+        height: 70px;
+        width: 70px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .square-black{
+        background-color: #a6e1ec;
+    }
+    .square-white{
+        background-color:#aaaaaa;
+    }
+    .chessPiece{
+        position: absolute;
+        z-index: 10;
+        height: 70px;
+        width: 70px;
+        font-size: 14px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .chessPiece:hover{
+        cursor: pointer;
+        -webkit-box-shadow: inset 0px 0px 20px 20px rgba(250, 160, 20, .8);
+        box-shadow: inset 0px 0px 20px 20px rgba(250, 160, 20, .8);
+    }
+    .pieceHover{
+        cursor: pointer;
+        -webkit-box-shadow: inset 0px 0px 20px 20px rgba(250, 160, 20, .8);
+        box-shadow: inset 0px 0px 20px 20px rgba(250, 160, 20, .8);
+        background-color: white;
+    }
+    .moveSmoothly{
+        transition: top 0.35s ease-in-out, left 0.35s ease-in-out;
+    }
+    .selectPath{
+        -webkit-box-shadow: inset 0px 0px 6px 10px rgba(39, 160, 96, .8);
+        box-shadow: inset 0px 0px 6px 10px rgba(39, 160, 96, .8);
+    }
+    .col-lg-10{
+        background-color: #B5B5B5;
+    }
+    #font_row{
+        background-color:#ECF0F1 ;
+    }
+    .chess_bord_img_size{
+        height: 50px;
+        width: 60px;
+    }
+}

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Play Chess Game</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <!--Hwading Img Change-->
+    <link rel="shortcut icon" href="images/chess.jpg">
+    <link rel="stylesheet" type="text/css" href="css/my_css/chess_game_style.css">
+    <link rel="stylesheet" type="text/css" href="css/my_bootstrap/chess_game_boostrap_style.css">
+    <link rel="stylesheet" type="text/css" href="css/midea_queary_css/chess_bord_midea_queary.css">
+    <link rel="stylesheet" type="text/css" href="css/my_css/background_desings_css.css">
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+</head>
+<body>
+
+<div id="div_loader"></div>
+    <div id="container-first" class="container">
+        <div id="top" class="row"></div>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Lahiru Sasanka</a>
+                </div>
+                <form class="navbar-form navbar-right">
+                    <a class="btn btn-primary" href="index.html" role="button">Home &raquo;</a>
+                    <a class="btn btn-primary" href="how_to_play.html" role="button">How to leran&raquo;</a>
+                </form>
+            </div>
+        </nav>
+        <div class="page-header">
+            <h6>.</h6>
+            <h1>Play Online <small class="header-small">chess Game</small></h1>
+        </div>
+        <br>
+        <div id="board" class="row">
+            <div class="col-lg-1 col-md-1"></div>
+            <div id="real_border" class="col-lg-10 col-md-10">
+                <br>
+                <div class="col-lg-1 col-md-1"></div>
+                <div class="col-lg-1 col-md-1">
+                    <div class="row label18">8</div>
+                    <div class="row label18">7</div>
+                    <div class="row label18">6</div>
+                    <div class="row label18">5</div>
+                    <div class="row label18">4</div>
+                    <div class="row label18">3</div>
+                    <div class="row label18">2</div>
+                    <div class="row label18">1</div>
+                </div>
+                <div class="col-lg-1 col-md-1">
+                    <div class="row square square-white" id="A8">
+                        <div class="black rock chessPiece" id="blackRockLeft">
+                            <img class="chess_bord_img_size" src="images/chess_bord_icon/Rook-black.png">
+                        </div>
+                    </div>
+                    <div class="row square square-black" id="A7">
+                        <div class="black pawn chessPiece" id="blackPawnA">
+                            <img class="chess_bord_img_size" src="images/chess_bord_icon/Pawn-black.png">
+                        </div>
+                    </div>
+                    <div class="row square square-white" id="A6"></div>
+                    <div class="row square square-black" id="A5"></div>
+                    <div class="row square square-white" id="A4"></div>
+                    <div class="row square square-black" id="A3"></div>
+                    <div class="row square square-white" id="A2">
+                        <div class="white pawn chessPiece" id="whitePawnA">
+                            <img class="chess_bord_img_size" src="images/chess_bord_icon/Pawn-white.png">
+                        </div>
+                    </div>
+                    <div class="row square square-black" id="A1">
+                        <div class="white rock chessPiece" id="WhiteRockLeft">
+                            <img class="chess_bord_img_size" src="images/chess_bord_icon/Rook-white.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-1">
+                    <div class="row square square-black" id="B8">
+                        <div class="black knight chessPiece" id="blackKnightLeft">
+                            <img class="chess_bord_img_size" src="images/chess_bord_icon/chessknight.png">
+                        </div>
+                    </div>
+                    <div class="row square square-white" id="B7">
+                        <div class="black pawn chessPiece" id="blackPawnB">
+                            <img class="chess_bord_img_size" src="images/chess_bord_icon/Pawn-black.png">
+                        </div>
+                    </div>
+                    <div class="row square square-black" id="B6"></div>
+                    <div class="row square square-white" id="B5"></div>
+                    <div class="row square square-black" id="B4"></div>
+                    <div class="row square square-white" id="B3"></div>
+                    <div class="row square square-black" id="B2">
+                        <div class="white pawn chessPiece" id="whitePawnB">
+                            <img class="chess_bord_img_size" src="images/chess_bord_icon/Pawn-white.png">
+                        </div>
+                    </div>
+                    <div class="row square square-white" id="B1">
+                        <div class="white knight chessPiece" id="whiteKnightLeft">
+                            <img class="chess_bord_img_size" src="images/chess_bord_icon/Knight-white.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-1">
+                    <div class="row square square-white" id="C8">
+                        <div class="black bishop chessPiece" id="blackBishopLeft">
+                            <img class="chess_bord_img_size" src="images/chess_bord_icon/Bishop-black.png">
+                        </div>
+                    </div>
+                    <div class="row square square-black" id="C7">
+                        <div class="black pawn chessPiece" id="blackPawnC">
+                            <img class="chess_bord_img_size" src="images/chess_bord_icon/Pawn-black.png">
+                        </div>
+                    </div>
+                    <div class="row square square-white" id="C6"></div>
+                    <div class="row square square-black" id="C5"></div>
+                    <div class="row square square-white" id="C4"></div>
+                    <div class="row square square-black" id="C3"></div>
+                    <div class="row square square-white" id="C2">
+                        <div class="white pawn chessPiece" id="whitePawnC">
+                            <img class="chess_bord_img_size" src="images/chess_bord_icon/Pawn-white.png">
+                        </div>
+                    </div>
+                    <div class="row square square-black" id="C1">
+                        <div class="white bishop chessPiece" id="WhiteBishopLeft">
+                            <img class="chess_bord_img_size" src="images/chess_bord_icon/Bishop-white.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-1">
+                    <div class="row square square-black" id="D8">
+                        <div class="black queen chessPiece" id="blackQueen">
+                            <img class="chess_bord_img_size" src="images/chess_bord_icon/Queen-black.png">
+                        </div>
+                    </div>
+                    <div class="row square square-white" id="D7">
+                        <div class="black pawn chessPiece" id="blackPawnD">
+                            <img class="chess_bord_img_size" src="images/chess_bord_icon/Pawn-black.png">
+                        </div>
+                    </div>
+                    <div class="row square square-black" id="D6"></div>
+                    <div class="row square square-white" id="D5"></div>
+                    <div class="row square square-black" id="D4"></div>
+                    <div class="row square square-white" id="D3"></div>
+                    <div class="row square square-black" id="D2">
+                        <div class="white pawn chessPiece" id="whitePawnD">
+                            <img class="chess_bord_img_size" src="images/chess_bord_icon/Pawn-white.png">
+                        </div>
+                    </div>
+                    <div class="row square square-white" id="D1">
+                        <div class="white queen chessPiece" id="WhiteQueen">
+                            <img class="chess_bord_img_size" src="images/chess_bord_icon/King-white.ico">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-1">
+                    <div class="row square square-white" id="E8">
+                        <div class="black king chessPiece" id="blackKing">
+                            <img class="chess_bord_img_size" src="images/chess_bord_icon/King-black.png">
+                        </div>
+                    </div>
+                    <div class="row square square-black" id="E7">
+                        <div class="black pawn chessPiece" id="blackPawnE">
+                            <img class="chess_bord_img_size" src="images/chess_bord_icon/Pawn-black.png">
+                        </div>
+                    </div>
+                    <div class="row square square-white" id="E6"></div>
+                    <div class="row square square-black" id="E5"></div>
+                    <div class="row square square-white" id="E4"></div>
+                    <div class="row square square-black" id="E3"></div>
+                    <div class="row square square-white" id="E2">
+                        <div class="white pawn chessPiece" id="whitePawnE">
+                            <img class="chess_bord_img_size" src="images/chess_bord_icon/Pawn-white.png">
+                        </div>
+                    </div>
+                    <div class="row square square-black" id="E1">
+                        <div class="white king chessPiece" id="WhiteKing">
+                            <img class="chess_bord_img_size" src="images/chess_bord_icon/Queen-white.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-1">
+                    <div class="row square square-black" id="F8">
+                        <div class="black bishop chessPiece" id="blackBishopRight">
+                            <img class="chess_bord_img_size" src="images/chess_bord_icon/Bishop-black.png">
+                        </div>
+                    </div>
+                    <div class="row square square-white" id="F7">
+                        <div class="black pawn chessPiece" id="blackPawnF">
+                            <img class="chess_bord_img_size" src="images/chess_bord_icon/Pawn-black.png">
+                        </div>
+                    </div>
+                    <div class="row square square-black" id="F6"></div>
+                    <div class="row square square-white" id="F5"></div>
+                    <div class="row square square-black" id="F4"></div>
+                    <div class="row square square-white" id="F3"></div>
+                    <div class="row square square-black" id="F2">
+                        <div class="white pawn chessPiece" id="whitePawnF">
+                            <img class="chess_bord_img_size" src="images/chess_bord_icon/Pawn-white.png">
+                        </div>
+                    </div>
+                    <div class="row square square-white" id="F1">
+                        <div class="white bishop chessPiece" id="WhiteBishopRight">
+                            <img class="chess_bord_img_size" src="images/chess_bord_icon/Bishop-white.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-1">
+                    <div class="row square square-white" id="G8">
+                        <div class="black knight chessPiece" id="blackKnightRight">
+                            <img class="chess_bord_img_size" src="images/chess_bord_icon/chessknight.png">
+                        </div>
+                    </div>
+                    <div class="row square square-black" id="G7">
+                        <div class="black pawn chessPiece" id="blackPawnG">
+                            <img class="chess_bord_img_size" src="images/chess_bord_icon/Pawn-black.png">
+                        </div>
+                    </div>
+                    <div class="row square square-white" id="G6"></div>
+                    <div class="row square square-black" id="G5"></div>
+                    <div class="row square square-white" id="G4"></div>
+                    <div class="row square square-black" id="G3"></div>
+                    <div class="row square square-white" id="G2">
+                        <div class="white pawn chessPiece" id="whitePawnG">
+                            <img class="chess_bord_img_size" src="images/chess_bord_icon/Pawn-white.png">
+                        </div>
+                    </div>
+                    <div class="row square square-black" id="G1">
+                        <div class="white knight chessPiece" id="WhiteKnightRight">
+                            <img class="chess_bord_img_size" src="images/chess_bord_icon/Knight-white.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-1">
+                    <div class="row square square-black" id="H8">
+                        <div class="black rock chessPiece" id="blackRockRight">
+                            <img class="chess_bord_img_size" src="images/chess_bord_icon/Rook-black.png">
+                        </div>
+                    </div>
+                    <div class="row square square-white" id="H7">
+                        <div class="black pawn chessPiece" id="blackPawnH">
+                            <img class="chess_bord_img_size" src="images/chess_bord_icon/Pawn-black.png">
+                        </div>
+                    </div>
+                    <div class="row square square-black" id="H6"></div>
+                    <div class="row square square-white" id="H5"></div>
+                    <div class="row square square-black" id="H4"></div>
+                    <div class="row square square-white" id="H3"></div>
+                    <div class="row square square-black" id="H2">
+                        <div class="white pawn chessPiece" id="whitePawnH">
+                            <img class="chess_bord_img_size" src="images/chess_bord_icon/Pawn-white.png">
+                        </div>
+                    </div>
+                    <div class="row square square-white" id="H1">
+                        <div class="white rock chessPiece" id="WhiteRockRight">
+                            <img class="chess_bord_img_size" src="images/chess_bord_icon/Rook-white.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-1">
+                    <div class="row label18"></div>
+                    <div class="row label18"></div>
+                    <div class="row label18"></div>
+                    <div class="row label18"></div>
+                    <div class="row label18"></div>
+                    <div class="row label18"></div>
+                    <div class="row label18"></div>
+                    <div class="row label18"></div>
+                </div>
+                <div class="col-lg-1 col-md-1"></div>
+            </div>
+            <div class="col-lg-1 col-md-1"></div>
+        </div>
+        <div class="row" id="font_row">
+            <div class="col-lg-1 col-md-1"></div>
+            <div class="col-lg-10 col-md-10" id="ddd">
+                <div class="col-lg-1 col-md-1"></div>
+                <div class="col-lg-1 col-md-1">
+                    <div class="labelAH"></div>
+                </div>
+                <div class="col-lg-1 col-md-1">
+                    <div class="labelAH">A</div>
+                </div>
+                <div class="col-lg-1 col-md-1">
+                    <div class="labelAH">B</div>
+                </div>
+                <div class="col-lg-1 col-md-1">
+                    <div class="labelAH">C</div>
+                </div>
+                <div class="col-lg-1 col-md-1">
+                    <div class="labelAH">D</div>
+                </div>
+                <div class="col-lg-1 col-md-1">
+                    <div class="labelAH">E</div>
+                </div>
+                <div class="col-lg-1 col-md-1">
+                    <div class="labelAH">F</div>
+                </div>
+                <div class="col-lg-1 col-md-1">
+                    <div class="labelAH">G</div>
+                </div>
+                <div class="col-lg-1 col-md-1">
+                    <div class="labelAH">H</div>
+                </div>
+                <div class="col-lg-1 col-md-1">
+                    <div class="labelAH"></div>
+                </div>
+            </div>
+            <div class="col-lg-1 col-md-1"></div>
+        </div>
+    </div>
+
+<script src="js/js_other/jquery-3.2.1.min%20(1).js"></script>
+<script src="js/js_other/my_js_viwer/jquery-ui.js"></script>
+<script src="js/my_js_viwer/chess_game_move.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+#div-loader{
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    /*background-image: url("");*/
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 99999;
+    background-color: #122b40;
+}
+
+#top{
+    height: 0px;
+}
+#board{
+    background-color: #2D467A;
+    margin-left: 0px;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#real_border{
+    background-color: #2D467A;
+    margin-left: 0px;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+/*lable*/
+.label18{
+    color: white;
+    height: 80px;
+    width: 70px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
+    vertical-align: middle;
+}
+.labelAH{
+    color: white;
+    height: 80px;
+    width: 80px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    vertical-align: middle;
+}
+/*square-boder*/
+.square{
+    height: 80px;
+    width: 80px;
+    font-size: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+.square-black{
+    background-color: #a6e1ec;
+}
+.square-white{
+    background-color:#aaaaaa;
+}
+/*chess Piece*/
+.chessPiece{
+    position: absolute;
+    z-index: 10;
+    height: 80px;
+    width: 80px;
+    font-size: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+.chessPiece:hover{
+    cursor: pointer;
+    -webkit-box-shadow: inset 0px 0px 30px 30px rgba(250, 160, 20, .8);
+    box-shadow: inset 0px 0px 30px 30px rgba(250, 160, 20, .8);
+}
+.pieceHover{
+    cursor: pointer;
+    -webkit-box-shadow: inset 0px 0px 30px 30px rgba(250, 160, 20, .8);
+    box-shadow: inset 0px 0px 30px 30px rgba(250, 160, 20, .8);
+    background-color: white;
+}
+/*movement*/
+.moveSmoothly{
+    transition: top 0.35s ease-in-out, left 0.35s ease-in-out;
+}
+.selectPath{
+    -webkit-box-shadow: inset 0px 0px 6px 10px rgba(39, 160, 96, .8);
+    box-shadow: inset 0px 0px 6px 10px rgba(39, 160, 96, .8);
+}
+.col-lg-10{
+    background-color: #2D467A;
+}
+#font_row{
+    background-color:#2D467A ;
+}
+.chess_bord_img_size{
+    height: 60px;
+    width: 70px;
+}
+#container-first{
+    background-color: #2D467A;
+}
+.page-header{
+    color: white;
+    font-weight: bold;
+}
+.header-small{
+    color: white;
+}
