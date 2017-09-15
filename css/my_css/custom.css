@@ -1,0 +1,106 @@
+#title{
+    height: 75px;
+    background-color: #122b40;
+    color: #dff0d8;
+    font-family: "Comic Sans MS";
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.background-colour{
+    background-color: #9acfea;
+}
+.main-border{
+    border-style: solid;
+    border-width: 5px;
+    border-color: #8a6d3b;
+}
+.div-sizes{
+    width: 118.7px;
+    height: 119.6px;
+    text-align: center;
+    float: left;
+}
+.white-image{
+    background-color: #1659e8;
+    width: 80px;
+    height: 80px;
+}
+.aa{
+    background-color: black;
+    width: 80px;
+    height: 20px;
+}
+.black-image{
+    background-color: #e9e9e9;
+    width: 80px;
+    height: 80px;
+}
+
+.draggable{
+    z-index: 1;
+    background-size: contain;
+    box-shadow: inherit;
+    align-self: auto;
+}
+.color-selected-div{
+    -webkit-box-shadow: inset 0px 0px 20px 30px #659D13;
+    box-shadow: inset 0px 0px 20px 30px #659D13;
+}
+.path{
+    -webkit-box-shadow: inset 0px 0px 20px 30px #080808;
+    box-shadow: inset 0px 0px 20px 30px  #080808;
+}
+.cross{
+    -webkit-box-shadow: inset 0px 0px 20px 30px red;
+    box-shadow: inset 0px 0px 20px 30px red;
+}
+
+.inner{
+    left: 0px;
+    width: 80px;
+    height: 80px;
+}
+div > div > div > div> div > div > {
+    left: 0px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+.rotate{
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+#board{
+    -moz-transition:  all 1s ease;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    padding-left: 255px;
+}
+.div-cross{
+    position: relative;
+    width:  60px;
+    height: 60px;
+    text-align: center;
+    float: left;
+}
+.team-name{
+    text-align: center;
+    font-size: 40px;
+    font-family: "Comic Sans MS";
+    padding-top: 100px;
+}
+.ch{
+    height: 75px;
+    width: 75px;
+}
+.img_num{
+    width: 50px;
+    height: 50px;
+}
+.container-fluid{
+    cursor: pointer;
+}
