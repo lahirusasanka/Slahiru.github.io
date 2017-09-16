@@ -1,0 +1,6 @@
+@media all and (min-width:400px) and (max-width:900px){
+    .img-rul-fist{
+        height: 200px;
+        width:  200px;
+    }
+}
